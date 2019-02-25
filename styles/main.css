@@ -326,10 +326,6 @@ ul{
 }
 
 /* #Digital Page */
-#digital .small {
-    margin-top: -30px;
-     margin-bottom: -30px;
-}
 #digital .stamford-site { 
     background-image: url(/images/mystamford-images/stamford-brand-9.JPG);
     background-size: cover;
@@ -339,7 +335,9 @@ ul{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    margin:0px 0 80px 0;
+    margin: 
+
 }
 #digital .label{
     text-transform:uppercase;
@@ -352,11 +350,14 @@ ul{
     margin:0 0 10px 0;
     padding-top:10px
 }
+#digital .clear-vision-container {
+    padding:50px 0 50px 0;
+}
 #digital .product-message-container{
-    padding:100px 0 100px 0;
+    padding:50px 0 50px 0;
     background-color:#C13333;
     max-width:1300px;
-    margin:-150px auto 00px auto;
+    margin:-100px auto 00px auto;
     color:#FFF;
 } 
 #digital .product-message-container p {
@@ -368,8 +369,7 @@ ul{
     font-family: "IBM Plex Sans";
 }
 #digital .launch-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding:50px 0 50px 0;
 }
 #digital .stamford-macbook {
     margin-top: 30px;
@@ -380,10 +380,10 @@ ul{
     margin-top: -300px;
 }
 #digital .values-container{
-    padding:100px 0 100px 0;
+    padding:50px 0 50px 0;
     background-color:#203065;
     max-width:1300px;
-    margin:100px auto;
+    margin: auto;
     color:#FFF
 }
 #digital .values-container p{
@@ -410,7 +410,8 @@ ul{
     height:100%
 }
 #digital .people-brand-container{
-    margin:50px 0
+    margin:auto;
+    padding:50px 0 50px 0;
 }
 #digital .clear-strategy {
     margin-bottom: 0px;
@@ -425,21 +426,20 @@ ul{
     background-position: bottom;
     width: 100%;
     height: 400px;
-    margin-bottom: -130px;
+    margin-bottom: -150px;
 }
-#digital .growth-campaign {
-    padding-top: 100px;
-    padding-bottom: 100px;
+#digital .growth-campaign-container {
+        padding:50px 0 50px 0;
     background-color:#203065;
     max-width:1300px;
-    margin:-100px auto;
+    margin: auto;
     color:#FFF
 }
-#digital .growth-campaign a {
+#digital .growth-campaign-container a {
     color: #fff!important
 }
-#digital .measuring-impact {
-    margin-top: 200px;
+#digital .measuring-impact-container {
+    padding:50px 0 50px 0;
 }
 #digital .stamford-small-images  {
     margin-top: -400px;
@@ -456,7 +456,7 @@ ul{
     padding-top:10px
 }
 #digital .gfda-video{
-    margin:80px 0;
+    margin:50px 0;
     position:relative;
     padding-bottom:56.25%;
     padding-top:0px;
@@ -815,20 +815,11 @@ video{
         width: 100%;
         margin-left: 0px;
     }
-
-    #digital .small {
-        margin-top: -50px;
-        margin-bottom: -50px;
-    }
-    #digital .small .extra {
-        margin-top: 30px;
-    }
     
     #digital .stamford-ipad {
         display: none;
     }
     #digital .footer {
-        height: 150px;
     }
 }
  
