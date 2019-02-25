@@ -1,0 +1,811 @@
+body{
+    font-family:"IBM Plex Sans", sans-serif;
+    padding:0;
+    background:#FFF;
+    color:#0B0B0D;
+    margin:0;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+h1{
+    font-size:2em;
+    line-height:1.2em;
+    padding:20px 0;
+    font-family:"Questrial";
+}
+h2{
+    font-size:1.8em;
+    line-height:1.2em;
+    font-family:"Questrial";
+    font-weight: 200;
+}
+h3{
+    font-size: 1.6em;
+    letter-spacing: .02em;
+    line-height: 1.3em;
+    font-weight: 400;
+}
+h4{
+    margin:30px 0 20px 0;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #0B0B0D;
+}
+p{
+    font-size:1em;
+    line-height:1.75em;
+    letter-spacing: .03em;
+    color: #929AAB    
+}
+
+/* Regular Links 
+a{
+    -webkit-transition:all 0.2s;
+    transition:all 0.2s;
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color:#1B0E52;
+} */
+
+
+/* Link Properties Added */
+a.highlight {
+    color:#9013FE;
+    text-decoration:none;
+    position:relative;
+    -webkit-transition:all .1s ease;
+    transition:all .1s ease;
+}
+a.highlight:hover {
+    font-weight: 400;
+    opacity: 1;
+}
+a.highlight:before{
+    content:'';
+    position:absolute;
+    bottom:-3px;
+    left:-.2em;
+    width:-webkit-calc(100% + .5em);
+    width:calc(100% + .5em);
+    z-index:-1;
+    height:.8em;
+    background:#EAF4FF;
+    opacity: .8;
+}
+a.highlight:hover:before{
+    left:-.5em;
+    width:-webkit-calc(100% + .9em);
+    width:calc(100% + .9em);
+    height:.9em;
+    bottom:-6px;
+}
+
+/* Added Work Link Properties */
+a.box-link {
+    display:block;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.45, 0.25, 0.25, 1);
+    border-radius: .25px;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 20px 30px 0px 0px;
+    opacity: .7;
+}
+a.box-link:hover {
+    background-image: url(/images/box-highlight.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: 0em 3.5em;
+    -webkit-transform: translateX(1rem); 
+    transform: translateX(1rem);
+    opacity: 1;
+    color: #0B0B0D;
+}
+
+a.box-link h2 {
+    color: #9013FE;
+}
+/* End Add ^^ */
+
+.quote{
+    font-size:1.5em;
+    font-weight:600;
+    font-family:"IBM Plex Sans"
+}
+.quote p{
+    line-height:1.6em;
+    margin-top:10px
+}
+ul{
+    list-style-type:none;
+    margin:20px 0 64px 0;
+    padding:0
+}
+.container{
+    margin:auto 0;
+    padding:20px;
+    box-sizing:border-box;
+/* if dark background: black; */
+}
+.container .large{
+    max-width:1300px;
+    box-sizing:border-box;
+    margin:auto;
+    margin-top: 50px;  /*Added*/  
+    margin-bottom: 100px; /*Added*/  
+}
+.container .small{
+    max-width:760px;
+    box-sizing:border-box;
+    margin:auto
+}
+.column{
+    box-sizing:border-box
+}
+.column .full{
+    width:100%
+}
+.column .left{
+    vertical-align:top;
+    width:50%;
+    display:inline-block;
+    padding-right:30px;
+    box-sizing:border-box
+}
+.column .right{
+    vertical-align:top;
+    width:50%;
+    display:inline-block;
+    padding-left:30px;
+    box-sizing:border-box
+}
+.page-title h3 {
+    padding:0;
+    margin:0;
+    display:inline-block;
+    font-size:1.4em;
+    margin-right:10px;
+    font-weight:800;
+}
+.page-title h3.role{
+    font-weight:300;
+    margin:0;
+    font-family:"Questrial";
+    font-size: 1.3em;
+    color: #929AAB;
+}
+.meta{
+    font-weight:700;
+    font-size:1em;
+    display:inline-block;
+    margin-right:40px;
+    margin-top: 20px;
+}
+.meta{
+    font-weight:800;
+    font-size:0.9em;
+    display:inline-block;
+    margin-right:40px;
+    font-family:"IBM Plex Sans"
+}
+.meta::before{
+    content:attr(title);
+    text-transform:uppercase;
+    font-size:0.6em;
+    letter-spacing:0.2em;
+    color:rgba(34,36,39,0.5);
+    display:block;
+    margin-bottom:8px
+}
+
+/* Homepage */
+#homepage .label{
+    color:#1381FE;
+    font-size:0.75em;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    font-weight: 600;
+}
+#homepage .page-title{
+    margin:80px 0 32px 0
+}
+#homepage .page-title h1 { 
+    margin:0;
+    padding:0;
+    font-size:2.1em;
+    letter-spacing: .02em;
+}
+#homepage .page-title h2 {
+    color: #929AAB;
+    margin:0;
+    padding:0;
+    font-size:1.8em
+}
+#homepage .resume{
+    padding-top: 30px;
+    width: 80%;
+}
+#homepage .resume li{
+    margin:0 0 20px 0
+}
+#homepage .resume .role{
+    font-size:0.9em;
+    font-family:"IBM Plex Sans";
+    margin:6px 0;
+}
+#homepage .resume .date{
+    font-size:0.9em;
+    color: #818091;
+}
+#homepage .resume .company{
+    font-size:0.9em;
+    opacity:0.5; /* Added */
+}
+#homepage .resume .skill{
+    font-size:0.9em;
+}
+#homepage .bottom-line .left, #homepage .bottom-line .right  {
+    padding-right: 45px;
+}
+.city {
+    height: 250px;
+    width: 100%;
+    background-image: url(/images/new-york-city-skyline.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 90px;
+}
+.world-map {
+    background: url(/images/north-america.svg) no-repeat;
+    -webkit-border-radius: 50%;
+    border-radius: 0%;
+    background-size: 100%;
+    background-size: contain;
+    width: 100%;
+    height:480px;
+    margin-top: 100px;
+    margin-bottom: -100px;
+}
+
+/* #Mobile Page */
+
+#mobile .upstay-gif {
+    height: auto;
+    width: 60%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.article .notes img {
+    height: 550px;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.article .defining-mobile {
+    background-image: url(/images/upstay-mobile-images/upstay-defining-mobile-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+.article .introducing-upstay {
+    margin-top: 50px;
+}
+.upstay-logo {
+    position: relative;
+    display: block;
+    background-image: url(/images/upstay-mobile-images/upstay-brand-identity.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100px;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: -30px;
+}
+#mobile .wireframes {
+    margin-top: 50px;
+}
+.component-library p {
+    margin-bottom: 40px;
+    margin-top: 40px; 
+}
+.component-library li{
+    padding-bottom:15px;
+}
+.component-library ul{
+    margin-bottom:0px;
+    margin-top: 30px
+}
+.component-library ul li:first-of-type{
+    font-family:"IBM Plex Sans"
+}
+
+/* #Digital Page */
+#digital .stamford-site { 
+    background-image: url(/images/mystamford-images/stamford-brand-9.JPG);
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+#digital .label{
+    text-transform:uppercase;
+    font-size:0.75em;
+    opacity:0.5;
+    font-family:"Avenir-Heavy";
+    letter-spacing:0.2em
+}
+#digital h2{
+    margin:0 0 10px 0;
+    padding-top:10px
+}
+#digital .product-message-container{
+    padding:100px 0 100px 0;
+    background-color:#C13333;
+    max-width:1300px;
+    margin:-150px auto 00px auto;
+    color:#FFF;
+} 
+#digital .product-message-container p {
+    color: #fff;
+}
+#digital .product-message-container a {
+    color: #fff;!important;
+    font-weight: bold;
+    font-family: "IBM Plex Sans";
+}
+#digital .launch-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#digital .stamford-macbook {
+    margin-top: 30px;
+}
+#digital .stamford-ipad {
+    width: 40%;
+    margin-left: 500px;
+    margin-top: -300px;
+}
+#digital .values-container{
+    padding:100px 0 100px 0;
+    background-color:#203065;
+    max-width:1300px;
+    margin:100px auto;
+    color:#FFF
+}
+#digital .values-container p{
+    z-index:1;
+    position:relative
+}
+#digital .values-container h2{
+    font-size:2.4em;
+    z-index:1;
+    position:relative
+}
+#digital .gfda-video{
+    margin:50px 0;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:25px;
+    height:0
+}
+#digital .gfda-video iframe{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%
+}
+#digital .people-brand-container{
+    margin:50px 0
+}
+#digital .clear-strategy {
+    margin-bottom: 0px;
+    margin-left: -150px;
+    margin-top: 50px;
+    width: 150%;
+}
+#digital .stamford-people{
+    background-image: url(/images/mystamford-images/stamford-people.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    width: 100%;
+    height: 400px;
+    margin-bottom: -130px;
+}
+#digital .growth-campaign {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color:#203065;
+    max-width:1300px;
+    margin:-100px auto;
+    color:#FFF
+}
+#digital .growth-campaign a {
+    color: #fff!important
+}
+#digital .measuring-impact {
+    margin-top: 200px;
+}
+#digital .stamford-small-images  {
+    margin-top: -400px;
+}
+#digital .label{
+    text-transform:uppercase;
+    font-size:0.75em;
+    opacity:0.5;
+    font-family:"IBM Plex Sans";
+    letter-spacing:0.2em
+}
+#digital h2{
+    margin:0 0 10px 0;
+    padding-top:10px
+}
+#digital .gfda-video{
+    margin:80px 0;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:0px;
+    height:0
+}
+#digital .gfda-video iframe{
+    position:absolute;
+    top:0px;
+    left:0;
+    width:100%;
+    height:100%
+}
+
+
+/* #Chatbot */
+#chatbot .mockups {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.article .wine-grapes {
+    background-image: url(/images/sommme-images/sommme-wine-grapes-intro.jpeg);
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.article .wine-guide {
+    background-image: url(/images/sommme-images/sommme-wine-chart.png);
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.wine-pairing {
+    margin-top: -60px;
+    margin-left: 350px;
+}
+#chatbot h2 {
+    width: 80%;
+}
+
+/* Footer */
+.footer{
+    margin-top:60px;
+}
+.article .footer{
+    margin-top:100px;
+    background:#F1F1F1;
+    padding-top:50px
+}
+.article .footer .footer-links{
+    display: inline-block;
+    font-weight: 400;
+    padding-right: 25px;
+}
+.article .footer h3{
+    font-size:1.0em
+}
+.article .footer a:hover{
+    color:#0B0B0D
+}
+.article .footer h4{
+    font-size:1.4em
+}
+.article .footer .label{
+    opacity:1!important;
+    color:#1B0E52;
+    font-size:0.75em;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    font-family:"IBM Plex Sans"
+}
+#homepage .social ul{
+    margin-top: 0px;
+}
+.social ul{
+    margin-left:00px;
+    margin-top: -50px;
+}
+.social li{
+    display:inline-block
+}
+.social li:hover{
+    opacity:1;
+    cursor:pointer;
+    cursor:hand
+}
+.twitter a:before, .linkedin a:before, .email a:before{
+    background: transparent;
+}
+.twitter a{
+    background-image:url(/images/twitter.svg);
+    display:block;
+    height:8px;
+    width:8px;
+    padding:10px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.twitter a:hover{
+    opacity:0.5
+}
+.email a{
+    background-image:url(/images/email.svg);
+    display:block;
+    height:15px;
+    width:8px;
+    padding:10px;
+    margin-top: -13px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.email a:hover{
+    opacity:0.5
+}
+.email{
+    height:20px;
+    padding:10px;
+    vertical-align:top;
+    font-family:"IBM Plex Sans"
+}
+.linkedin a{
+    background-image:url(/images/linkedin.svg);
+    display:block;
+    height:10px;
+    width:8px;
+    padding:8px;
+    margin-right: 13px;
+    background-position:center;
+    background-repeat:no-repeat
+}
+.linkedin a:hover{
+    opacity:0.5
+}
+
+/* Other Pages */
+.article .page-title{
+    margin-top:32px
+}
+.article h1{
+    margin:64px 0
+}
+.article h2{
+    font-size:2.2em
+}
+.article p.caption{
+    font-size:0.9em;
+    color:#0B0B0D;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.article .workflow-detail{
+    margin-top:-60px
+}
+.article a{
+    font-family:"Questrial"
+}
+.small img{
+    width:100%;
+    margin:0 auto;
+    margin:20px 0 0 0
+}
+.large img{
+    width:100%;
+    margin:0 auto
+}
+video{
+    margin:20px 0
+}
+.footer h3 a{
+    font-size:1.8em
+}
+.footer h4 a{
+    font-size:1.8em
+}
+#fourohfour.article h1{
+    margin-bottom:0
+}
+
+/* Labels */
+.coming-soon::after{
+    content:"COMING SOON";
+    text-transform:uppercase;
+    font-size:0.4em;
+    font-family:"IBM Plex Sans";
+    letter-spacing:0.2em;
+    margin-left:10px;
+    vertical-align:middle;
+}
+.reading::after{
+    content:"READING";
+    text-transform:uppercase;
+    font-size:0.4em;
+    font-family:"IBM Plex Sans";
+    letter-spacing:0.2em;
+    margin-left:10px;
+    vertical-align:middle;
+    color:rgba(34,36,39,0.5)
+}
+.mobile-header-fix{
+    position:relative;
+    top:-300px;
+    z-index:-1;
+    width:100%;
+    height:460px
+}
+.mobile-header-fix img{
+    width:100%
+}
+.n1-outline{
+    max-width:1068px;
+    margin:auto
+}
+.n1-first-paragraph{
+    margin-top:-200px
+}
+.n2-front{
+    margin:-160px 0 0 -60px;
+    max-width:470px
+}
+.b1-first-paragraph{
+    margin-top:100px
+}
+.b1-container{
+    background-color:#EFEDE8;
+    max-width:1300px;
+    margin:100px auto
+}
+.b1-container .quote{
+    margin-top:40px
+}
+.b1-container .container{
+    padding:80px 20px 0 20px
+}
+.b1-close-up img{
+    vertical-align:bottom
+}
+#side-projects h1{
+    font-size:2.6em
+}
+
+@media screen and (max-width:950px){
+.city {
+    height: 180px;
+    background-size: contain;
+    width: 150%;
+}
+.world-map {
+    height:280px;
+    width: 150%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    #digital .stamford-people{
+    width: 150%;
+    height: 350px;
+}
+}
+
+@media screen and (max-width:600px){
+    .mobile-header-fix{
+        position:relative;
+        top:-60px;
+        z-index:-1;
+        width:100%;
+        height:300px
+    }
+    .mobile-header-fix img{
+        width:100%
+    }
+    .n1-first-paragraph{
+        margin-top:-50px
+    }
+    .n2-front{
+        margin:0;
+        max-width:100%
+    }
+    .b1-container .container{
+        padding:20px 20px 0 20px
+    }
+    .b1-container .b1-first-paragraph{
+        margin:0
+    }
+    .chat-bubble{
+        display:block;
+        width:auto;
+        height:auto;
+        background-repeat:no-repeat;
+        position:relative;
+        left:0;
+        top:0
+    }
+    #homepage .page-title{
+        margin:2px 0 32px 0
+    }
+    #homepage .footer{
+        margin:0
+    }
+    .city{
+        background-size:cover;
+        height:150px;
+        margin:0px 0px 80px 0
+    }
+    .world-map{
+        width: 250%;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .column .left{
+        width:100%;
+        padding-right:0
+    }
+    .column .right{
+        width:100%;
+        padding-left:0
+    }
+    .column .right .resume {
+        padding-left: 0px;
+        margin-top: 50px;
+    }
+    #homepage .page-title {
+        margin-top: 60px;
+    }
+    .upstay-logo {
+        width: 100%;
+    }   
+    
+    .article .mockups-2  {
+        margin-top: 0px;
+    }
+    .article .mockups-2 p {
+        margin-top: 50px;
+    }
+    .article .notes img {
+        display: none;
+    }
+    #digital .stamford-people{
+        background-position: bottom left;
+        margin-top: -150px;
+    }
+    #digital .clear-strategy {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+ 
