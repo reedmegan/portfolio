@@ -11,6 +11,7 @@ body{
 h1{
     font-size:2em;
     line-height:1.2em;
+    letter-spacing: 0.0em;
     padding:20px 0;
     font-family:"Questrial";
 }
@@ -170,28 +171,22 @@ ul{
     display:inline-block;
     font-size:1.4em;
     margin-right:10px;
-    font-weight:800;
+    font-weight:400;
 }
 .page-title h3.role{
-    font-weight:300;
+    font-weight:400;
     margin:0;
     font-family:"Questrial";
     font-size: 1.3em;
     color: #929AAB;
 }
 .meta{
-    font-weight:700;
-    font-size:1em;
-    display:inline-block;
-    margin-right:40px;
-    margin-top: 20px;
-}
-.meta{
     font-weight:800;
     font-size:0.9em;
     display:inline-block;
     margin-right:40px;
-    font-family:"IBM Plex Sans"
+    font-family:"IBM Plex Sans";
+    margin-top: 20px;
 }
 .meta::before{
     content:attr(title);
@@ -217,7 +212,7 @@ ul{
 #homepage .page-title h1 { 
     margin:0;
     padding:0;
-    font-size:2.1em;
+    font-size:2.0em;
 }
 #homepage .page-title h2 {
     color: #929AAB;
@@ -642,10 +637,6 @@ video{
 .footer h4 a{
     font-size:1.8em
 }
-#fourohfour.article h1{
-    margin-bottom:0
-}
-
 /* Labels */
 .coming-soon::after{
     content:"COMING SOON";
@@ -655,7 +646,31 @@ video{
     letter-spacing:0.2em;
     margin-left:10px;
     vertical-align:middle;
+    color: #0B0B0D;
+    font-weight: bold;
 }
+
+.visit-site::after{
+    content:"VISIT SITE";
+    text-transform:uppercase;
+    font-size:0.4em;
+    font-family:"IBM Plex Sans";
+    letter-spacing:0.2em;
+    margin-left:10px;
+    vertical-align:middle;
+    
+}
+
+.case-study::after{
+    content:"CASE STUDY";
+    text-transform:uppercase;
+    font-size:0.4em;
+    font-family:"IBM Plex Sans";
+    letter-spacing:0.2em;
+    margin-left:10px;
+    vertical-align:middle;
+}
+
 .reading::after{
     content:"READING";
     text-transform:uppercase;
@@ -704,10 +719,6 @@ video{
 .b1-close-up img{
     vertical-align:bottom
 }
-#side-projects h1{
-    font-size:2.6em
-}
-
 @media screen and (max-width:950px){
 .city {
     height: 180px;
