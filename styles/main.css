@@ -329,6 +329,7 @@ ul{
 /* #Digital Page */
 #digital .stamford-site { 
     background-image: url(/images/mystamford-images/stamford-brand-9.JPG);
+    background-size: contain;
     position: relative;
     width: 100%;
     height: 400px;
@@ -481,7 +482,7 @@ ul{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     margin-bottom: 100px;
 }
 .article .wine-guide {
@@ -764,10 +765,12 @@ video{
     .city{
         background-size:cover;
         height:150px;
+        width: 100%;
         margin:0px 0px 80px 0
     }
     .world-map{
-        width: 250%;
+        background-size: cover;
+        width: 100%;
         margin-top: 30px;
         margin-bottom: 0px;
     }
@@ -800,12 +803,32 @@ video{
         display: none;
     }
     #digital .stamford-people{
+        background-size: cover;
         background-position: bottom left;
-        margin-top: -150px;
+        margin-top: -50px;
+        width: 105%;
     }
     #digital .clear-strategy {
         width: 100%;
         margin-left: 0px;
+    }
+    .article .wine-grapes {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .article .wine-guide {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    #digital .small {
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+    #digital .stamford-ipad {
+        display: none;
+    }
+    #digital .footer {
+        height: 150px;
     }
 }
  
