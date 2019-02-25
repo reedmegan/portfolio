@@ -60,7 +60,7 @@ a.highlight {
     transition:all .1s ease;
 }
 a.highlight:hover {
-    font-weight: 400;
+    font-weight: 800;
     opacity: 1;
 }
 a.highlight:before{
@@ -218,7 +218,6 @@ ul{
     margin:0;
     padding:0;
     font-size:2.1em;
-    letter-spacing: .02em;
 }
 #homepage .page-title h2 {
     color: #929AAB;
@@ -327,16 +326,19 @@ ul{
 }
 
 /* #Digital Page */
+#digital .small {
+    margin-top: -30px;
+     margin-bottom: -30px;
+}
 #digital .stamford-site { 
     background-image: url(/images/mystamford-images/stamford-brand-9.JPG);
-    background-size: contain;
+    background-size: cover;
     position: relative;
     width: 100%;
     height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     margin-bottom: 100px;
 }
 #digital .label{
@@ -482,12 +484,13 @@ ul{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin-bottom: 100px;
 }
 .article .wine-guide {
     background-image: url(/images/sommme-images/sommme-wine-chart.png);
     position: relative;
+    background-size: cover;
     width: 100%;
     height: 500px;
     background-attachment: fixed;
@@ -812,18 +815,15 @@ video{
         width: 100%;
         margin-left: 0px;
     }
-    .article .wine-grapes {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
-    .article .wine-guide {
-        margin-bottom: 0px;
-        margin-top: 0px;
-    }
+
     #digital .small {
         margin-top: -50px;
         margin-bottom: -50px;
     }
+    #digital .small .extra {
+        margin-top: 30px;
+    }
+    
     #digital .stamford-ipad {
         display: none;
     }
