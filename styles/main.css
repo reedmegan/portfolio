@@ -332,7 +332,6 @@ ul{
     background-repeat: no-repeat;
     margin:0px 0 80px 0;
     margin: 
-
 }
 #digital .label{
     text-transform:uppercase;
@@ -831,6 +830,24 @@ video{
         display: none;
     }
     #digital .footer {
+    }
+    .article .wine-grapes {
+        background-attachment: inherit;
+    }
+    .article .wine-guide {
+        background-attachment: inherit;
+        margin-top: -50px;
+        margin-bottom: -100px;
+    }
+    #digital .stamford-site { 
+        background-attachment: inherit;
+        margin-top: -30px;
+    }
+    #digital h1 {
+        width: 80%;
+    }
+    #chatbot h2 {
+        width: 80%;
     }
 }
  
