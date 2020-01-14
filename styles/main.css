@@ -633,6 +633,21 @@ ul{
     line-height: 24px;
     color: #0B0B0D;
 }
+#resume .link {
+    color:#0B0B0D;
+    font-weight: bold;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+}
+#resume .link-lite {
+    color:#0B0B0D;
+    font-family: "IBM Plex Sans", sans-serif;
+    text-decoration: none;
+}
+
+#resume .link:hover, #resume .link-lite:hover {
+    color: #469cfe;
+}
 
 #resume .education-header{
     font-size: 1.3em;
