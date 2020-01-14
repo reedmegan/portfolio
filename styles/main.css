@@ -596,6 +596,50 @@ ul{
     opacity:0.5
 }
 
+/* Resume Page */
+
+#resume .container .small {
+    max-width: 80%;
+}
+
+#resume .summary {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: -.5px;
+    font-weight: 400;
+}
+
+#resume .left {
+    max-width: 650px;
+}
+
+#resume .right {
+    max-width: 500px;
+    padding-left: 50px;
+}
+
+#resume .resume-header{
+    font-size: 1.3em;
+    color: #1381FE;
+}
+
+#resume .experience{
+    font-size: 1em;
+    color: #0B0B0D;
+}
+
+#resume p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #0B0B0D;
+}
+
+#resume .education-header{
+    font-size: 1.3em;
+    color: #9013FE;
+}
+
+
 /* Other Pages */
 .article .page-title{
     margin-top:32px
@@ -734,6 +778,14 @@ video{
     width: 150%;
     height: 350px;
 }
+    #resume .left {
+        width: 100%;
+    }
+    #resume .right {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px
+    }
 }
 
 @media screen and (max-width:600px){
@@ -845,6 +897,10 @@ video{
     }
     #digital h1 {
         width: 90%;
+    }
+    #resume .right {
+        max-width: 500px;
+        padding-left: 0px;
     }
 }
  
