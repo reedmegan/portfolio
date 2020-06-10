@@ -709,7 +709,7 @@ video{
 }
 
 .visit-site::after{
-    content:"VISIT SITE";
+    content:"COMING SOON";
     text-transform:uppercase;
     font-size:0.4em;
     font-family:"IBM Plex Sans";
